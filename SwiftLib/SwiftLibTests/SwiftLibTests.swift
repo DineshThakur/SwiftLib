@@ -31,4 +31,9 @@ class SwiftLibTests: XCTestCase {
         }
     }
 
+    
+    func testAdd() {
+        var swiftyLib = SwiftyLib()
+        XCTAssertEqual(swiftyLib.add(a: 1, b: 1), 2)
+    }
 }

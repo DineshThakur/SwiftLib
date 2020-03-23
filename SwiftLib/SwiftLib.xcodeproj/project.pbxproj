@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C323D5924290CE40037E1A7 /* SwiftyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C323D5824290CE40037E1A7 /* SwiftyLib.swift */; };
+		3C323D5A24290D470037E1A7 /* SwiftyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C323D5824290CE40037E1A7 /* SwiftyLib.swift */; };
 		AF1BF47F2404FEF70006EB0E /* SwiftLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1BF4752404FEF60006EB0E /* SwiftLib.framework */; };
 		AF1BF4842404FEF70006EB0E /* SwiftLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1BF4832404FEF70006EB0E /* SwiftLibTests.swift */; };
 		AF1BF4862404FEF70006EB0E /* SwiftLib.h in Headers */ = {isa = PBXBuildFile; fileRef = AF1BF4782404FEF60006EB0E /* SwiftLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C323D5824290CE40037E1A7 /* SwiftyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLib.swift; sourceTree = "<group>"; };
 		AF1BF4752404FEF60006EB0E /* SwiftLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1BF4782404FEF60006EB0E /* SwiftLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftLib.h; sourceTree = "<group>"; };
 		AF1BF4792404FEF60006EB0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				AF1BF4782404FEF60006EB0E /* SwiftLib.h */,
+				3C323D5824290CE40037E1A7 /* SwiftyLib.swift */,
 				AF1BF4792404FEF60006EB0E /* Info.plist */,
 			);
 			path = SwiftLib;
@@ -148,6 +152,7 @@
 				TargetAttributes = {
 					AF1BF4742404FEF60006EB0E = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1030;
 					};
 					AF1BF47D2404FEF70006EB0E = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -195,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C323D5924290CE40037E1A7 /* SwiftyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF1BF4842404FEF70006EB0E /* SwiftLibTests.swift in Sources */,
+				3C323D5A24290D470037E1A7 /* SwiftyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +347,7 @@
 		AF1BF48A2404FEF70006EB0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.daimler.pacTrisME.iOS.iPhone.SwiftLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +372,7 @@
 		AF1BF48B2404FEF70006EB0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +396,7 @@
 		AF1BF48D2404FEF70006EB0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +414,7 @@
 		AF1BF48E2404FEF70006EB0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
